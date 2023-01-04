@@ -4,7 +4,6 @@
 
 > **AudioViewer: Learning to Visualize Sounds** <br>
 > [Chunjin Song*](https://chunjinsong.github.io/), Yuchi Zhang*, Willis Peng, Parmis Mohaghegh, [Bastian Wandt](https://bastianwandt.de/), and [Helge Rhodin](https://www.cs.ubc.ca/~rhodin/web/) <br>
-> *Thirty-sixth Conference on Neural Information Processing Systems* (**NeurIPS 2022 Spotlight**)
 
 [[Paper](https://arxiv.org/pdf/2012.13341.pdf)][[Website](https://chunjinsong.github.io/audioviewer/)]
 
