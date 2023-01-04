@@ -1,0 +1,29 @@
+
+dataset:
+  path_audio_timit_spec_pair_train: '../datasets/TIMIT_spec/specs/TIMITMel_100_TRAIN.hdf5'
+  path_audio_timit_spec_triplet_train: '../datasets/TIMIT_spec/specs/TIMITMel_anno_20_TRAIN_center.hdf5'
+  path_audio_timit_spec_triplet_unifo: '../datasets/TIMIT_spec/specs/utter_info_timit.pkl'
+
+  batch_size_pair: 64
+  batch_size_triplet: 64 # 128 in paper, 256 in code
+
+trainer:
+  GPU_ID: [0]
+
+  n_FBank: 80  #
+  z_dim: 256  #
+
+
+  epochs: 600
+  lr: 0.001 #1e-3
+  wd: 0.0001 #1e-4
+  betas: [0.95, 0.999]
+  eps: 0.00000001 #1e-8
+  lr_decay_rate: 0.8
+
+  plot_every: 1000
+
+output:
+  dir_output: '../output'
+
+

@@ -1,0 +1,15 @@
+training: !!bool "true"
+device: "cuda"
+unprocessed_data: '../data/raw/LDC93S1/TIMIT/*/*/*/*.wav'
+---
+data:
+    out_path: '../data/processed/TIMIT_spec/specs'
+    sr: 16000
+    nfft: 400 #For mel spectrogram preprocess
+    window: 0.025 #(s)
+    hop: 0.01 #(s)
+    nmels: 80 #Number of mel energies
+    # tisv_frame: 180 #Max number of time steps in input after preprocess
+    seg_len: 20 # segment length in terms of frame number
+    seg_shift: 20 # segment shift interms of frame number
+    flooring_dB: -40 # minimum dB

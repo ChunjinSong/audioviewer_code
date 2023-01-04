@@ -1,0 +1,52 @@
+data:
+  dir_data: '../dataset'
+  path_audio_timit_spec_single_train: 'TIMIT_spec/specs/TIMITMel_20_TRAIN.hdf5'
+  path_audio_timit_spec_pair_train: 'TIMIT_spec/specs/TIMITMel_100_TRAIN.hdf5'
+  path_audio_timit_spec_triplet_train: 'TIMIT_spec/specs/TIMITMel_anno_20_TRAIN_center.hdf5'
+  path_audio_timit_spec_triplet_unifo: 'TIMIT_spec/specs/utter_info_timit.pkl'
+
+  batch_size_single: 4
+  batch_size_pair: 4
+  batch_size_triplet: 2
+
+
+trainer:
+  GPU_ID: [0]
+  epochs: 10
+
+  lr_map: 0.0001
+  wd_map: 0.00001
+  betas_map: [0.95, 0.999]
+  eps_map: 0.00000001
+  lr_decay_rate_map: 0.8
+
+  plot_every: 500
+
+  z_dim_visual: 512
+  z_dim_audio: 256
+  s_dim_audio: 128
+  n_FBank: 80
+
+  type: 'content' #'all'
+
+  scale1: 1.0
+  scale2: 5.0
+  scale3: 0.001
+  weight_kl: 1.0
+  weight_cycle1: 1.0
+  weight_cycle2: 1.0
+  weight_iso1: 2.0
+  weight_iso2: 5.0
+
+  dir_model: '../models'
+
+  path_model_audio: 'audio.pth'
+  config_video: './visual-celeba-hq256.yaml'
+
+output:
+  dir_output: '../output'
+
+
+
+
+

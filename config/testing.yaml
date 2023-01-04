@@ -1,0 +1,33 @@
+name: 'test'
+GPU_ID: [0]
+
+output:
+  dir_output: '../output/'
+
+model:
+  path_audio: '../models/audio.pth'
+  path_visual: '../models/visual_celebahq.pth'
+  config_visual: '../visual-celeba-hq256.yaml'
+  path_mappingA2V: '../models/mappingA2V.pth'
+
+
+  z_dim_visual: 512
+  z_dim_audio: 256 # 192 128
+  s_dim_audio: 128
+  n_FBank: 80
+  type: 'content'
+
+data:
+  path_audio_timit_spec_single_train: '../mparmis/datasets/TIMIT_spec/specs/TIMITMel_20_TRAIN.hdf5'
+  path_audio_timit_spec_pair_train: '../mparmis/datasets/TIMIT_spec/specs/TIMITMel_100_TRAIN.hdf5'
+  path_audio_timit_spec_triplet_train: '../mparmis/datasets/TIMIT_spec/specs/TIMITMel_anno_20_TRAIN_center.hdf5'
+  path_audio_timit_spec_triplet_unifo: '../mparmis/datasets/TIMIT_spec/specs/utter_info_timit.pkl'
+
+  batch_size_single: 4 #144  # 128 in paper, 256 in code # try 216 to roughlt match the training speed of the two model
+  batch_size_pair: 4 # 144
+  batch_size_triplet: 2 #64
+
+
+
+
+
