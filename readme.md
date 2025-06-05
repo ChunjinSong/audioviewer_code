@@ -31,7 +31,8 @@ conda install -n <env_name> requirements.txt
 ~~~
 ## Dataset
 Audio Dataset can be found from [google drive](https://drive.google.com/drive/folders/1P4FtTj_b04YvJN5ScV_0qF409EiUrhq1?usp=sharing)
-The visual dataset can be accessed by following the instructions provided in 'style_soft_intro_vae'.
+
+The image dataset can be accessed by following the instructions provided in 'style_soft_intro_vae'.
 
 ## Pre-trained models
 Pre-trained models can be found from [google drive](https://drive.google.com/drive/folders/1U5_52z2Ip67X72Vb1meOxTtMGLB4UQg0?usp=sharing)
