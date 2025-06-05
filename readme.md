@@ -30,14 +30,21 @@ Alternatively, you can install them with Anaconda:
 conda install -n <env_name> requirements.txt
 ~~~
 ## Dataset
-Dataset can be found from [google drive](black)
+Audio Dataset can be found from [google drive](https://drive.google.com/drive/folders/1P4FtTj_b04YvJN5ScV_0qF409EiUrhq1?usp=sharing)
+The visual dataset can be accessed by following the instructions provided in 'style_soft_intro_vae'.
 
 ## Pre-trained models
-Pre-trained models can be found from [google drive](black)
+Pre-trained models can be found from [google drive](https://drive.google.com/drive/folders/1U5_52z2Ip67X72Vb1meOxTtMGLB4UQg0?usp=sharing)
 
 ## Training
 
-To train the models, please refer to the corresponding notebooks in `trainint.py`
+To train the models, please follow these steps:
+
+First, train the audio model using 'training_audio.py'.
+
+Next, train the visual model using 'style_soft_intro_vae'.
+
+Finally, train the A2V (Audio-to-Visual) mapping module by following the corresponding notebooks provided in 'training.py'.
 
 ## Evaluate
 
